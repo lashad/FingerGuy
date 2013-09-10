@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="10">
+                                <rect key="frame" x="282" y="429" width="18" height="19"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KHJ-03-nxl" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="Zzj-vG-WyW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YpB-vl-FnS">
+                                <rect key="frame" x="54" y="308" width="213" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Unlock Door" backgroundImage="Button.png">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.90217391300000005" green="0.90217391300000005" blue="0.90217391300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="2" eventType="touchUpInside" id="aDk-GS-0aq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="o2U-HH-2oL">
+                                <rect key="frame" x="229" y="105" width="48" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="Leavemessage.png">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.90217391300000005" green="0.90217391300000005" blue="0.90217391300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leaveMessage:" destination="2" eventType="touchUpInside" id="J86-9n-bd3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="XzR-gT-UlI">
+                                <rect key="frame" x="116" y="105" width="48" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="Backlight-off.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="Backlight-on.png"/>
+                                <connections>
+                                    <action selector="backLight:" destination="2" eventType="touchUpInside" id="2i2-7H-1FT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backlightButton" destination="XzR-gT-UlI" id="sRS-Am-Oyj"/>
+                        <outlet property="leaveMessageButton" destination="o2U-HH-2oL" id="LBN-57-nCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-284"/>
+        </scene>
+        <!--Flipside View Controller - Node Devices-->
+        <scene sceneID="tkH-fm-ZbL">
+            <objects>
+                <tableViewController id="6Bx-T7-wAa" customClass="FlipsideViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JOt-PC-xmI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qVa-qW-7Vd">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6Bx-T7-wAa" id="BqF-3A-RbK"/>
+                            <outlet property="delegate" destination="6Bx-T7-wAa" id="z4X-RN-faX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Node Devices" id="KgR-6f-MAS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="QAc-DP-0Mv">
+                            <connections>
+                                <action selector="done:" destination="6Bx-T7-wAa" id="gRG-VM-qTw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="JOt-PC-xmI" id="Kwo-Eh-gXA"/>
+                        <segue destination="af3-9X-bWA" kind="push" identifier="showNodeNet" id="UWv-9Q-Lf0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uN0-IF-8af" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="-284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fuV-Os-N3N">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="KHJ-03-nxl" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="tqL-uM-TyN">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6Bx-T7-wAa" kind="relationship" relationship="rootViewController" id="ZX6-bE-8wp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waO-Tl-cgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="-284"/>
+        </scene>
+        <!--Node Device View Controller - Root View Controller-->
+        <scene sceneID="SSh-9l-rSi">
+            <objects>
+                <tableViewController id="af3-9X-bWA" customClass="NodeDeviceViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SQA-gP-tTq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="k2z-9o-ahG">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="cz5-we-yjX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nit-vN-COp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Backlight-off.png" width="256" height="256"/>
+        <image name="Backlight-on.png" width="256" height="256"/>
+        <image name="Button.png" width="292" height="46"/>
+        <image name="Leavemessage.png" width="256" height="256"/>
+    </resources>
+    <classes>
+        <class className="FlipsideViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipsideViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="nodeNetCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backLight:"/>
+                <relationship kind="action" name="leaveMessage:"/>
+                <relationship kind="action" name="send:"/>
+                <relationship kind="action" name="togglePopover:"/>
+                <relationship kind="outlet" name="backlightButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leaveMessageButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSDate" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSDate.h"/>
+        </class>
+        <class className="NodeDeviceViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NodeDeviceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="beepCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="deviceAddress" candidateClass="NSString"/>
+                <relationship kind="outlet" name="deviceAddressCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="firmwareCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="firmwareReleaseDate" candidateClass="NSDate"/>
+                <relationship kind="outlet" name="firmwareVersion" candidateClass="NSString"/>
+                <relationship kind="outlet" name="firmwarereleaseDateCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="modelName" candidateClass="NSString"/>
+                <relationship kind="outlet" name="modelNameCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="rebootCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="timeCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="timeStamp" candidateClass="NSDate"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PTNodeNetConnector onUdpSocket:didReceiveData:withTag:fromHost:port:]:PTNodeNetConnector.m">
+      </ContextState>
+      <ContextState
+         contextName = "hos_nodemsg_get_param_int:hos_nodemsg.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "stack">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "renderDisplay:AppDelegate.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

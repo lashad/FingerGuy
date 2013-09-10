@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1330883917DEFA91009E7FD9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330883817DEFA91009E7FD9 /* icon.png */; };
+		1330883B17DEFABC009E7FD9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330883A17DEFABC009E7FD9 /* Icon@2x.png */; };
+		1330883D17DEFAC8009E7FD9 /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330883C17DEFAC8009E7FD9 /* Icon~ipad.png */; };
+		1330883F17DEFACF009E7FD9 /* Icon~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330883E17DEFACF009E7FD9 /* Icon~ipad@2x.png */; };
+		1330884117DEFAF1009E7FD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884017DEFAF1009E7FD9 /* Default-568h@2x.png */; };
+		1330884317DEFB88009E7FD9 /* Background-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884217DEFB88009E7FD9 /* Background-568@2x.png */; };
+		1330884917DEFB9B009E7FD9 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884417DEFB9A009E7FD9 /* Background.png */; };
+		1330884A17DEFB9B009E7FD9 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884517DEFB9A009E7FD9 /* Background@2x.png */; };
+		1330884B17DEFB9B009E7FD9 /* Background~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884617DEFB9A009E7FD9 /* Background~ipad.png */; };
+		1330885717DEFBCC009E7FD9 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330884E17DEFBCC009E7FD9 /* Button.png */; };
+		1330885A17DEFBCC009E7FD9 /* Thermometer_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885117DEFBCC009E7FD9 /* Thermometer_Bar.png */; };
+		1330885B17DEFBCC009E7FD9 /* Thermometer_Bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885217DEFBCC009E7FD9 /* Thermometer_Bar@2x.png */; };
+		1330885C17DEFBCC009E7FD9 /* Thermometer_Head.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885317DEFBCC009E7FD9 /* Thermometer_Head.png */; };
+		1330885D17DEFBCC009E7FD9 /* Thermometer_Head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885417DEFBCC009E7FD9 /* Thermometer_Head@2x.png */; };
+		1330885E17DEFBCC009E7FD9 /* Thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885517DEFBCC009E7FD9 /* Thermometer.png */; };
+		1330885F17DEFBCC009E7FD9 /* Thermometer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1330885617DEFBCC009E7FD9 /* Thermometer@2x.png */; };
+		136CD89017DF00ED00B77512 /* Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 136CD88F17DF00ED00B77512 /* Check.png */; };
+		136CD89217DF012A00B77512 /* Leavemessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 136CD89117DF012A00B77512 /* Leavemessage.png */; };
+		136CD89517DF015300B77512 /* Backlight-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 136CD89317DF015300B77512 /* Backlight-off.png */; };
+		136CD89617DF015300B77512 /* Backlight-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 136CD89417DF015300B77512 /* Backlight-on.png */; };
+		1375FA5917DDF37A00A12EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA5017DDF37A00A12EEA /* AppDelegate.m */; };
+		1375FA5A17DDF37A00A12EEA /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA5217DDF37A00A12EEA /* FlipsideViewController.m */; };
+		1375FA5B17DDF37A00A12EEA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA5417DDF37A00A12EEA /* MainViewController.m */; };
+		1375FA5C17DDF37A00A12EEA /* NodeDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA5617DDF37A00A12EEA /* NodeDeviceViewController.m */; };
+		1375FA5D17DDF37A00A12EEA /* PTThermometerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA5817DDF37A00A12EEA /* PTThermometerView.m */; };
+		1375FA6317DDF3AE00A12EEA /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA6217DDF3AE00A12EEA /* AsyncUdpSocket.m */; };
+		1375FA6617DDF3B800A12EEA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA6517DDF3B800A12EEA /* MBProgressHUD.m */; };
+		1375FA6C17DDF3C400A12EEA /* hos_nodemsg.c in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA6817DDF3C400A12EEA /* hos_nodemsg.c */; };
+		1375FA6D17DDF3C400A12EEA /* PTNodeNetConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1375FA6B17DDF3C400A12EEA /* PTNodeNetConnector.m */; };
+		C60050FA156D309600C05422 /* DeviceDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60050F9156D309600C05422 /* DeviceDetails.xib */; };
+		C631CC3615664E2500678540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C631CC3515664E2500678540 /* UIKit.framework */; };
+		C631CC3815664E2500678540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C631CC3715664E2500678540 /* Foundation.framework */; };
+		C631CC3A15664E2500678540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C631CC3915664E2500678540 /* CoreGraphics.framework */; };
+		C631CC4015664E2500678540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C631CC3E15664E2500678540 /* InfoPlist.strings */; };
+		C631CC4215664E2500678540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C631CC4115664E2500678540 /* main.m */; };
+		C631CC4915664E2500678540 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C631CC4715664E2500678540 /* MainStoryboard_iPhone.storyboard */; };
+		C631CC4C15664E2500678540 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C631CC4A15664E2500678540 /* MainStoryboard_iPad.storyboard */; };
+		C6330CB7162EB28C00400143 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6330CB6162EB28C00400143 /* CoreLocation.framework */; };
+		C67CE00E156BB4FE00DE94DB /* NodeNetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67CE00D156BB4FE00DE94DB /* NodeNetCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1330883817DEFA91009E7FD9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		1330883A17DEFABC009E7FD9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		1330883C17DEFAC8009E7FD9 /* Icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon~ipad.png"; path = "../Icon~ipad.png"; sourceTree = "<group>"; };
+		1330883E17DEFACF009E7FD9 /* Icon~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon~ipad@2x.png"; path = "../Icon~ipad@2x.png"; sourceTree = "<group>"; };
+		1330884017DEFAF1009E7FD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		1330884217DEFB88009E7FD9 /* Background-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-568@2x.png"; path = "img/Background-568@2x.png"; sourceTree = SOURCE_ROOT; };
+		1330884417DEFB9A009E7FD9 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = img/Background.png; sourceTree = SOURCE_ROOT; };
+		1330884517DEFB9A009E7FD9 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background@2x.png"; path = "img/Background@2x.png"; sourceTree = SOURCE_ROOT; };
+		1330884617DEFB9A009E7FD9 /* Background~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background~ipad.png"; path = "img/Background~ipad.png"; sourceTree = SOURCE_ROOT; };
+		1330884E17DEFBCC009E7FD9 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = img/Button.png; sourceTree = SOURCE_ROOT; };
+		1330885117DEFBCC009E7FD9 /* Thermometer_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thermometer_Bar.png; path = img/Thermometer_Bar.png; sourceTree = SOURCE_ROOT; };
+		1330885217DEFBCC009E7FD9 /* Thermometer_Bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Thermometer_Bar@2x.png"; path = "img/Thermometer_Bar@2x.png"; sourceTree = SOURCE_ROOT; };
+		1330885317DEFBCC009E7FD9 /* Thermometer_Head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thermometer_Head.png; path = img/Thermometer_Head.png; sourceTree = SOURCE_ROOT; };
+		1330885417DEFBCC009E7FD9 /* Thermometer_Head@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Thermometer_Head@2x.png"; path = "img/Thermometer_Head@2x.png"; sourceTree = SOURCE_ROOT; };
+		1330885517DEFBCC009E7FD9 /* Thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thermometer.png; path = img/Thermometer.png; sourceTree = SOURCE_ROOT; };
+		1330885617DEFBCC009E7FD9 /* Thermometer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Thermometer@2x.png"; path = "img/Thermometer@2x.png"; sourceTree = SOURCE_ROOT; };
+		136CD88F17DF00ED00B77512 /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Check.png; path = img/Check.png; sourceTree = SOURCE_ROOT; };
+		136CD89117DF012A00B77512 /* Leavemessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Leavemessage.png; path = img/Leavemessage.png; sourceTree = SOURCE_ROOT; };
+		136CD89317DF015300B77512 /* Backlight-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Backlight-off.png"; path = "img/Backlight-off.png"; sourceTree = SOURCE_ROOT; };
+		136CD89417DF015300B77512 /* Backlight-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Backlight-on.png"; path = "img/Backlight-on.png"; sourceTree = SOURCE_ROOT; };
+		1375FA4F17DDF37A00A12EEA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		1375FA5017DDF37A00A12EEA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		1375FA5117DDF37A00A12EEA /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
+		1375FA5217DDF37A00A12EEA /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
+		1375FA5317DDF37A00A12EEA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		1375FA5417DDF37A00A12EEA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		1375FA5517DDF37A00A12EEA /* NodeDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeDeviceViewController.h; path = Classes/NodeDeviceViewController.h; sourceTree = "<group>"; };
+		1375FA5617DDF37A00A12EEA /* NodeDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NodeDeviceViewController.m; path = Classes/NodeDeviceViewController.m; sourceTree = "<group>"; };
+		1375FA5717DDF37A00A12EEA /* PTThermometerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTThermometerView.h; path = Classes/PTThermometerView.h; sourceTree = "<group>"; };
+		1375FA5817DDF37A00A12EEA /* PTThermometerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTThermometerView.m; path = Classes/PTThermometerView.m; sourceTree = "<group>"; };
+		1375FA6117DDF3AE00A12EEA /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Library/AsyncUdp/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		1375FA6217DDF3AE00A12EEA /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = Library/AsyncUdp/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		1375FA6417DDF3B800A12EEA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Library/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		1375FA6517DDF3B800A12EEA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Library/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		1375FA6717DDF3C400A12EEA /* hos_nodemsg_cfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hos_nodemsg_cfg.h; path = Library/Connector/hos_nodemsg_cfg.h; sourceTree = "<group>"; };
+		1375FA6817DDF3C400A12EEA /* hos_nodemsg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hos_nodemsg.c; path = Library/Connector/hos_nodemsg.c; sourceTree = "<group>"; };
+		1375FA6917DDF3C400A12EEA /* hos_nodemsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hos_nodemsg.h; path = Library/Connector/hos_nodemsg.h; sourceTree = "<group>"; };
+		1375FA6A17DDF3C400A12EEA /* PTNodeNetConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNodeNetConnector.h; path = Library/Connector/PTNodeNetConnector.h; sourceTree = "<group>"; };
+		1375FA6B17DDF3C400A12EEA /* PTNodeNetConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTNodeNetConnector.m; path = Library/Connector/PTNodeNetConnector.m; sourceTree = "<group>"; };
+		C60050F9156D309600C05422 /* DeviceDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceDetails.xib; sourceTree = "<group>"; };
+		C631CC3115664E2500678540 /* FingerGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C631CC3515664E2500678540 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C631CC3715664E2500678540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C631CC3915664E2500678540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C631CC3D15664E2500678540 /* FingerGuy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FingerGuy-Info.plist"; sourceTree = "<group>"; };
+		C631CC3F15664E2500678540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C631CC4115664E2500678540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C631CC4315664E2500678540 /* FingerGuy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FingerGuy-Prefix.pch"; sourceTree = "<group>"; };
+		C631CC4815664E2500678540 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C631CC4B15664E2500678540 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C6330CB6162EB28C00400143 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C67CE00D156BB4FE00DE94DB /* NodeNetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeNetCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C631CC2E15664E2500678540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6330CB7162EB28C00400143 /* CoreLocation.framework in Frameworks */,
+				C631CC3615664E2500678540 /* UIKit.framework in Frameworks */,
+				C631CC3815664E2500678540 /* Foundation.framework in Frameworks */,
+				C631CC3A15664E2500678540 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1375FA4E17DDF37200A12EEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1375FA4F17DDF37A00A12EEA /* AppDelegate.h */,
+				1375FA5017DDF37A00A12EEA /* AppDelegate.m */,
+				1375FA5117DDF37A00A12EEA /* FlipsideViewController.h */,
+				1375FA5217DDF37A00A12EEA /* FlipsideViewController.m */,
+				1375FA5317DDF37A00A12EEA /* MainViewController.h */,
+				1375FA5417DDF37A00A12EEA /* MainViewController.m */,
+				1375FA5517DDF37A00A12EEA /* NodeDeviceViewController.h */,
+				1375FA5617DDF37A00A12EEA /* NodeDeviceViewController.m */,
+				1375FA5717DDF37A00A12EEA /* PTThermometerView.h */,
+				1375FA5817DDF37A00A12EEA /* PTThermometerView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1375FA5E17DDF37F00A12EEA /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				1375FA6717DDF3C400A12EEA /* hos_nodemsg_cfg.h */,
+				1375FA6817DDF3C400A12EEA /* hos_nodemsg.c */,
+				1375FA6917DDF3C400A12EEA /* hos_nodemsg.h */,
+				1375FA6A17DDF3C400A12EEA /* PTNodeNetConnector.h */,
+				1375FA6B17DDF3C400A12EEA /* PTNodeNetConnector.m */,
+			);
+			name = Connector;
+			sourceTree = "<group>";
+		};
+		1375FA5F17DDF38600A12EEA /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1375FA6417DDF3B800A12EEA /* MBProgressHUD.h */,
+				1375FA6517DDF3B800A12EEA /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1375FA6017DDF3A000A12EEA /* AsyncUdp */ = {
+			isa = PBXGroup;
+			children = (
+				1375FA6117DDF3AE00A12EEA /* AsyncUdpSocket.h */,
+				1375FA6217DDF3AE00A12EEA /* AsyncUdpSocket.m */,
+			);
+			name = AsyncUdp;
+			sourceTree = "<group>";
+		};
+		C631CC2615664E2500678540 = {
+			isa = PBXGroup;
+			children = (
+				C631CC3B15664E2500678540 /* FingerGuy */,
+				C631CC3415664E2500678540 /* Frameworks */,
+				C631CC3215664E2500678540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C631CC3215664E2500678540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C631CC3115664E2500678540 /* FingerGuy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C631CC3415664E2500678540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6330CB6162EB28C00400143 /* CoreLocation.framework */,
+				C631CC3515664E2500678540 /* UIKit.framework */,
+				C631CC3715664E2500678540 /* Foundation.framework */,
+				C631CC3915664E2500678540 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C631CC3B15664E2500678540 /* FingerGuy */ = {
+			isa = PBXGroup;
+			children = (
+				1375FA6017DDF3A000A12EEA /* AsyncUdp */,
+				1375FA5F17DDF38600A12EEA /* MBProgressHUD */,
+				1375FA5E17DDF37F00A12EEA /* Connector */,
+				1375FA4E17DDF37200A12EEA /* Classes */,
+				C631CC4715664E2500678540 /* MainStoryboard_iPhone.storyboard */,
+				C631CC4A15664E2500678540 /* MainStoryboard_iPad.storyboard */,
+				C631CC3C15664E2500678540 /* Supporting Files */,
+			);
+			path = FingerGuy;
+			sourceTree = "<group>";
+		};
+		C631CC3C15664E2500678540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1330884017DEFAF1009E7FD9 /* Default-568h@2x.png */,
+				1330884217DEFB88009E7FD9 /* Background-568@2x.png */,
+				1330884417DEFB9A009E7FD9 /* Background.png */,
+				1330884517DEFB9A009E7FD9 /* Background@2x.png */,
+				1330884617DEFB9A009E7FD9 /* Background~ipad.png */,
+				136CD89317DF015300B77512 /* Backlight-off.png */,
+				136CD89417DF015300B77512 /* Backlight-on.png */,
+				1330883E17DEFACF009E7FD9 /* Icon~ipad@2x.png */,
+				1330883C17DEFAC8009E7FD9 /* Icon~ipad.png */,
+				1330883A17DEFABC009E7FD9 /* Icon@2x.png */,
+				1330883817DEFA91009E7FD9 /* icon.png */,
+				136CD89117DF012A00B77512 /* Leavemessage.png */,
+				1330884E17DEFBCC009E7FD9 /* Button.png */,
+				136CD88F17DF00ED00B77512 /* Check.png */,
+				1330885117DEFBCC009E7FD9 /* Thermometer_Bar.png */,
+				1330885217DEFBCC009E7FD9 /* Thermometer_Bar@2x.png */,
+				1330885317DEFBCC009E7FD9 /* Thermometer_Head.png */,
+				1330885417DEFBCC009E7FD9 /* Thermometer_Head@2x.png */,
+				1330885517DEFBCC009E7FD9 /* Thermometer.png */,
+				1330885617DEFBCC009E7FD9 /* Thermometer@2x.png */,
+				C631CC3D15664E2500678540 /* FingerGuy-Info.plist */,
+				C631CC3E15664E2500678540 /* InfoPlist.strings */,
+				C631CC4115664E2500678540 /* main.m */,
+				C631CC4315664E2500678540 /* FingerGuy-Prefix.pch */,
+				C67CE00D156BB4FE00DE94DB /* NodeNetCell.xib */,
+				C60050F9156D309600C05422 /* DeviceDetails.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C631CC3015664E2500678540 /* FingerGuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C631CC5515664E2500678540 /* Build configuration list for PBXNativeTarget "FingerGuy" */;
+			buildPhases = (
+				C631CC2D15664E2500678540 /* Sources */,
+				C631CC2E15664E2500678540 /* Frameworks */,
+				C631CC2F15664E2500678540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingerGuy;
+			productName = FingerGuy;
+			productReference = C631CC3115664E2500678540 /* FingerGuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C631CC2815664E2500678540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C631CC2B15664E2500678540 /* Build configuration list for PBXProject "FingerGuy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C631CC2615664E2500678540;
+			productRefGroup = C631CC3215664E2500678540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C631CC3015664E2500678540 /* FingerGuy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C631CC2F15664E2500678540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C631CC4015664E2500678540 /* InfoPlist.strings in Resources */,
+				C631CC4915664E2500678540 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C631CC4C15664E2500678540 /* MainStoryboard_iPad.storyboard in Resources */,
+				C67CE00E156BB4FE00DE94DB /* NodeNetCell.xib in Resources */,
+				C60050FA156D309600C05422 /* DeviceDetails.xib in Resources */,
+				1330883917DEFA91009E7FD9 /* icon.png in Resources */,
+				1330883B17DEFABC009E7FD9 /* Icon@2x.png in Resources */,
+				1330883D17DEFAC8009E7FD9 /* Icon~ipad.png in Resources */,
+				1330883F17DEFACF009E7FD9 /* Icon~ipad@2x.png in Resources */,
+				1330884117DEFAF1009E7FD9 /* Default-568h@2x.png in Resources */,
+				1330884317DEFB88009E7FD9 /* Background-568@2x.png in Resources */,
+				1330884917DEFB9B009E7FD9 /* Background.png in Resources */,
+				1330884A17DEFB9B009E7FD9 /* Background@2x.png in Resources */,
+				1330884B17DEFB9B009E7FD9 /* Background~ipad.png in Resources */,
+				1330885717DEFBCC009E7FD9 /* Button.png in Resources */,
+				1330885A17DEFBCC009E7FD9 /* Thermometer_Bar.png in Resources */,
+				1330885B17DEFBCC009E7FD9 /* Thermometer_Bar@2x.png in Resources */,
+				1330885C17DEFBCC009E7FD9 /* Thermometer_Head.png in Resources */,
+				1330885D17DEFBCC009E7FD9 /* Thermometer_Head@2x.png in Resources */,
+				1330885E17DEFBCC009E7FD9 /* Thermometer.png in Resources */,
+				1330885F17DEFBCC009E7FD9 /* Thermometer@2x.png in Resources */,
+				136CD89017DF00ED00B77512 /* Check.png in Resources */,
+				136CD89217DF012A00B77512 /* Leavemessage.png in Resources */,
+				136CD89517DF015300B77512 /* Backlight-off.png in Resources */,
+				136CD89617DF015300B77512 /* Backlight-on.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C631CC2D15664E2500678540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C631CC4215664E2500678540 /* main.m in Sources */,
+				1375FA5917DDF37A00A12EEA /* AppDelegate.m in Sources */,
+				1375FA5A17DDF37A00A12EEA /* FlipsideViewController.m in Sources */,
+				1375FA5B17DDF37A00A12EEA /* MainViewController.m in Sources */,
+				1375FA5C17DDF37A00A12EEA /* NodeDeviceViewController.m in Sources */,
+				1375FA5D17DDF37A00A12EEA /* PTThermometerView.m in Sources */,
+				1375FA6317DDF3AE00A12EEA /* AsyncUdpSocket.m in Sources */,
+				1375FA6617DDF3B800A12EEA /* MBProgressHUD.m in Sources */,
+				1375FA6C17DDF3C400A12EEA /* hos_nodemsg.c in Sources */,
+				1375FA6D17DDF3C400A12EEA /* PTNodeNetConnector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C631CC3E15664E2500678540 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C631CC3F15664E2500678540 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C631CC4715664E2500678540 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C631CC4815664E2500678540 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C631CC4A15664E2500678540 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C631CC4B15664E2500678540 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C631CC5315664E2500678540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C631CC5415664E2500678540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C631CC5615664E2500678540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FingerGuy/FingerGuy-Prefix.pch";
+				INFOPLIST_FILE = "FingerGuy/FingerGuy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C631CC5715664E2500678540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FingerGuy/FingerGuy-Prefix.pch";
+				INFOPLIST_FILE = "FingerGuy/FingerGuy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C631CC2B15664E2500678540 /* Build configuration list for PBXProject "FingerGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C631CC5315664E2500678540 /* Debug */,
+				C631CC5415664E2500678540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C631CC5515664E2500678540 /* Build configuration list for PBXNativeTarget "FingerGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C631CC5615664E2500678540 /* Debug */,
+				C631CC5715664E2500678540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C631CC2815664E2500678540 /* Project object */;
+}
