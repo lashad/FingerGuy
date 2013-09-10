@@ -3,6 +3,7 @@ FingerGuy
 
 FingerGuy iOS Application for access control devices.
 
+![](img/Iphone4_FingerGuy.png)
 
 ## License
 
