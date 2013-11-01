@@ -7,6 +7,7 @@
 //
 
 #import "NodeDeviceViewController.h"
+#import "AppDelegate.h"
 
 @interface NodeDeviceViewController ()
 
@@ -19,6 +20,7 @@
 @synthesize modelNameCell;
 @synthesize deviceAddressCell;
 @synthesize rebootCell;
+@synthesize firmwareUpdateCell;
 @synthesize beepCell;
 @synthesize firmwareVersion;
 @synthesize firmwareReleaseDate;
@@ -85,7 +87,7 @@
         return 5;
     }
     
-    return 2;
+    return 3;
 }
 
 
@@ -106,41 +108,51 @@
     if(indexPath.section == 1 && indexPath.row == 0) {
         NSLog(@"Reboot device");
         
-        
-        }
+        PTNodeNetConnector *nodeNetConnector = [PTNodeNetConnector sharedInstance];
+        [nodeNetConnector setDelegate:self];
+        [nodeNetConnector requestReboot:[deviceAddress intValue]];
+    }
 
     if(indexPath.section == 1 && indexPath.row == 1) {
         NSLog(@"Beep device");
         
         PTNodeNetConnector *nodeNetConnector = [PTNodeNetConnector sharedInstance];
+        [nodeNetConnector setDelegate:self];
         [nodeNetConnector requestBeep:[deviceAddress intValue]];
-
-        
     }
+    
+    if(indexPath.section == 1 && indexPath.row == 2) {
+        NSLog(@"Firmware update");
+        
+        PTNodeNetConnector *nodeNetConnector = [PTNodeNetConnector sharedInstance];
+        [nodeNetConnector setDelegate:self];
+        [nodeNetConnector requestFlash:[deviceAddress intValue]];
+    }
+
 }
 
 
 
-- (void)processDidFinishCommandMessage:(PTNodeNetConnector *)nodeNetConnector
+- (void)processDidFinishCommandFlash:(PTNodeNetConnector *)nodeNetConnector
 {
-    NSLog(@"Message was sent");
+    [AppDelegate showHudMessage:self.view message:@"Firmware update preparing."];
 }
 
 
+- (void)processDidFinishCommandBeep:(PTNodeNetConnector *)nodeNetConnector
+{
+    [AppDelegate showHudMessage:self.view message:@"Beep..."];
+}
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    static NSString *MyIdentifier = @"MyNodeNetCell";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
-//        //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-//        
-//    }
-    
-    
-//   cell.textLabel.text = @"IHUU";
+
+- (void)processDidFinishCommandRestart:(PTNodeNetConnector *)nodeNetConnector
+{
+    [AppDelegate showHudMessage:self.view message:@"Restarting..."];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
   
     if(indexPath.section == 0) {
         if(indexPath.row == 0) {
@@ -170,6 +182,9 @@
         
         if(indexPath.row == 1) {
             return beepCell;
+        }
+        if(indexPath.row == 2) {
+            return firmwareUpdateCell;
         }
     }
     

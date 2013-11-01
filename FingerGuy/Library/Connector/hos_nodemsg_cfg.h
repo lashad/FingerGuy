@@ -28,8 +28,10 @@
 
 #define HOS_NODEMSG_COMMAND_GET_TEMPERATURE         100
 #define HOS_NODEMSG_COMMAND_GET_LCDBACKLIGHT        101
-#define HOS_NODEMSG_COMMAND_GET_DOOR                102
-#define HOS_NODEMSG_COMMAND_GET_MESSAGE             103
+#define HOS_NODEMSG_COMMAND_UNLOCK_DOOR             102
+#define HOS_NODEMSG_COMMAND_SET_MESSAGE             103
+
+#define HOS_NODEMSG_COMMAND_FLASH                   200
 
 // Low level dynamic memory allocation functin
 #define HOS_NODEMSG_MEM_ALLOC(s)   malloc(s)

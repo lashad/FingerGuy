@@ -112,7 +112,7 @@ struct _hos_nodemsg_packet
 	uint8_t     method;              // Method (request/response)
 	uint8_t     command;             // Command
 	uint8_t     param_count;         // param count	
-	uint8_t     data[43];            // Data buffer
+	uint8_t     data[];              // Data buffer
 } __attribute__ ((__packed__));
 
 struct _hos_nodemsg_stack
@@ -124,22 +124,19 @@ struct _hos_nodemsg_stack
 };
 
 
-hos_nodemsg_stack *hos_nodemsg_init();
-void hos_nodemsg_destroy(hos_nodemsg_stack *stack); 
-hos_nodemsg_stack *hos_nodemsg_sharedstack();
 
-hos_nodemsg_packet * hos_nodemsg_swap_address(hos_nodemsg_packet *packet);
-int32_t hos_nodemsg_packet_receive(hos_nodemsg_stack *stack, uint8_t *buffer, uint8_t size);
-int hos_nodemsg_packet_check(hos_nodemsg_packet *packet);
-int hos_nodemsg_packet_validate(hos_nodemsg_packet *packet);
-uint16_t  hos_nodemsg_calc_checksum(hos_nodemsg_packet *packet); 
+int32_t hos_nodemsg_packet_receive(uint8_t *data, uint8_t len);
+int hos_nodemsg_packet_check(hos_nodemsg_packet *packet, uint16_t len);
+int hos_nodemsg_packet_validate(hos_nodemsg_packet *packet, uint16_t len);
+uint16_t hos_nodemsg_calc_checksum(hos_nodemsg_packet *packet, uint16_t len);
 
-uint8_t hos_nodemsg_get_param_string(hos_nodemsg_stack *stack, uint8_t index, char **val, uint8_t *len);
-uint8_t hos_nodemsg_get_param_int(hos_nodemsg_stack *stack, uint8_t index, int *val, uint8_t *len);
-void hos_nodemsg_add_next_param(hos_nodemsg_stack *stack, hos_nodemsg_packet *packet, uint8_t type, const void *value, uint8_t size);
-void hos_nodemsg_add_first_param(hos_nodemsg_stack *stack, hos_nodemsg_packet *packet, uint8_t type, void *value, uint8_t size);
-void hos_nodemsg_fill_defaults(hos_nodemsg_stack *stack, hos_nodemsg_packet *packet); 
-void hos_nodemsg_create_request(hos_nodemsg_stack *stack, hos_nodemsg_packet *packet, uint16_t des_address, uint8_t command);
+uint8_t hos_nodemsg_get_param_string(hos_nodemsg_packet *packet, uint8_t index, char **val, uint8_t *len);
+uint8_t hos_nodemsg_get_param_int(hos_nodemsg_packet *packet, uint8_t index, int *val, uint8_t *len);
+uint16_t hos_nodemsg_add_next_param(uint16_t handler, hos_nodemsg_packet *packet, uint8_t type,  void *value, uint8_t size);
+uint16_t hos_nodemsg_add_first_param(hos_nodemsg_packet *packet, uint8_t type, void *value, uint8_t size);
+
+void hos_nodemsg_fill_defaults(hos_nodemsg_packet *packet, uint16_t dest_address);
+void hos_nodemsg_create_request(hos_nodemsg_packet *packet, uint16_t des_address, uint8_t command);
 
 
 

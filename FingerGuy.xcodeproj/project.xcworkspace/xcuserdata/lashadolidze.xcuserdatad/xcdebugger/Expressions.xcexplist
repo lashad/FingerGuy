@@ -3,9 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[PTNodeNetConnector onUdpSocket:didReceiveData:withTag:fromHost:port:]:PTNodeNetConnector.m">
-      </ContextState>
-      <ContextState
          contextName = "hos_nodemsg_get_param_int:hos_nodemsg.c">
          <PersistentStrings>
             <PersistentString
@@ -15,6 +12,20 @@
       </ContextState>
       <ContextState
          contextName = "renderDisplay:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PTNodeNetConnector onUdpSocket:didReceiveData:withTag:fromHost:port:]:PTNodeNetConnector.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate application:didFinishLaunchingWithOptions:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "count">
+            </PersistentString>
+            <PersistentString
+               value = "compressed">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

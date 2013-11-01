@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MBProgressHUD.h"
 
 
 @implementation AppDelegate
@@ -16,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							
@@ -45,6 +45,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
++ (void) showHudMessage:(UIView *)view message:(NSString*)message
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.mode = MBProgressHUDModeCustomView;
+    hud.labelText = message;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.7 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+        [MBProgressHUD hideHUDForView:view animated:YES];
+    });
 }
 
 @end

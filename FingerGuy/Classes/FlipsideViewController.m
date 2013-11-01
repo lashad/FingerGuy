@@ -176,7 +176,8 @@
         label.text = [attribute objectForKey:PTNODEMSG_ATTRIBUTE_MODELNAME];
         
         label = (UILabel *)[cell viewWithTag:20];
-        label.text = [attribute objectForKey:PTNODEMSG_ATTRIBUTE_DEVICEADDRESS];
+        label.text = [NSString stringWithFormat:@"%@ (%@)", [attribute objectForKey:PTNODEMSG_ATTRIBUTE_DEVICEADDRESS],
+                      [attribute objectForKey:PTNODEMSG_ATTRIBUTE_DEVICEIP]];
         
         
         UIImageView *checkView = (UIImageView *)[cell viewWithTag:30];

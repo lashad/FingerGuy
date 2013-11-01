@@ -20,6 +20,7 @@
     IBOutlet UITableViewCell         *modelNameCell;
     IBOutlet UITableViewCell         *deviceAddressCell;
     IBOutlet UITableViewCell         *rebootCell;
+    IBOutlet UITableViewCell         *firmwareUpdateCell;
     IBOutlet UITableViewCell         *beepCell;
     
     NSString                         *firmwareVersion;
@@ -36,6 +37,7 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell *modelNameCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *deviceAddressCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *rebootCell;
+@property (nonatomic, retain) IBOutlet UITableViewCell *firmwareUpdateCell;
 @property (nonatomic, retain) IBOutlet UITableViewCell *beepCell;
 
 @property (nonatomic, retain) IBOutlet NSString *firmwareVersion;

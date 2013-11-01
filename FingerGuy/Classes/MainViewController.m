@@ -8,8 +8,7 @@
 
 #import "MainViewController.h"
 #import "PTThermometerView.h"
-#import "MBProgressHUD.h"
-
+#import "AppDelegate.h"
 
 @interface MainViewController ()
 
@@ -35,8 +34,6 @@
         leaveMessageButton.frame =  CGRectMake([UIScreen mainScreen].bounds.size.width - 90,130,48,48);
         backlightButton.frame =  CGRectMake([UIScreen mainScreen].bounds.size.width - 160,128,48,48);
     }
-    
-    // NSLog(@"Aba %@", self.view);
     
     PTThermometerView *thermometerView = [[PTThermometerView alloc] initWithFrame:CGRectMake((self.view.frame.size.width / 2) - 120, (self.view.frame.size.height / 2) - 50, 120, 100)];
     
@@ -209,14 +206,14 @@
 {
     NSUInteger newLength = [textField.text length] + [string length] - range.length;
     
-    NSCharacterSet* tSet = [NSCharacterSet characterSetWithCharactersInString:
-                            @"abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ><?.,\"\\/][{}=+-_)(*&^%$#@!':; "];
-    NSCharacterSet* invSet = [tSet invertedSet];
-
-    
-    
-    if ([string rangeOfCharacterFromSet:invSet].location != NSNotFound)
-        return NO;
+//    NSCharacterSet* tSet = [NSCharacterSet characterSetWithCharactersInString:
+//                            @"abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ><?.,\"\\/][{}=+-_)(*&^%$#@!':; "];
+//    NSCharacterSet* invSet = [tSet invertedSet];
+//
+//    
+//    
+//    if ([string rangeOfCharacterFromSet:invSet].location != NSNotFound)
+//        return NO;
     
     
     return (newLength > MAX_MESSAGE_LENGTH) ? NO : YES;
@@ -227,7 +224,7 @@
 - (void)processDidFinishCommandTemperature:(PTNodeNetConnector *)nodeNetConnector
                                temperature:(NSInteger)temperature;
 {
-    //NSLog(@"Temperature is %d\n", temperature);
+    NSLog(@"Temperature is %d\n", temperature);
     
     PTThermometerView *thermometerView = (PTThermometerView*)[self.view viewWithTag:100];
     
@@ -248,46 +245,28 @@
 {
     NSLog(@"Door unlocked successfully.");
     
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.labelText = @"Door unlocked successfully.";
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 1.8 * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-    });
+    [AppDelegate showHudMessage:self.view message:@"Door unlocked successfully."];
 }
 
 - (void)processDidFinishCommandMessage:(PTNodeNetConnector *)nodeNetConnector
 {
     NSLog(@"Your message was sent successfully.");
 
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.labelText = @"Your message was sent.";
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 1.8 * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-    });
+    [AppDelegate showHudMessage:self.view message:@"Your message was sent."];
 }
 
 - (void)processDidFinishCommandLcdBacklight:(PTNodeNetConnector *)nodeNetConnector state:(BOOL)state
 {
     NSLog(@"Backlight status set.");
-
+    
+//    [AppDelegate showHudMessage:self.view message:[NSString stringWithFormat:@"Backlight was %@", (state == NO) ? @"Off": @"On" ]];
+    
     if(state) {
         [backlightButton setSelected:YES];
     } else {
         [backlightButton setSelected:NO];
     }
     
-//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    hud.mode = MBProgressHUDModeCustomView;
-//    hud.labelText = [NSString stringWithFormat:@"Backlight was %@", (state == NO) ? @"Off": @"On" ];
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 1.1 * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-//        [MBProgressHUD hideHUDForView:self.view animated:YES];
-//    });
-    
-    
+//    [AppDelegate showHudMessage:self.view message:[NSString stringWithFormat:@"Backlight was %@", (state == NO) ? @"Off": @"On" ]];
 }
 @end

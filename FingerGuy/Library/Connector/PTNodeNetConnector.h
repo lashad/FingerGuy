@@ -38,8 +38,9 @@ return _sharedObject; \
 #define PTBODENET_UDP_PORT                    1233
 
 /* Default UDP transport Broadcast address */
+//#define PTBODENET_UDP_BROADCAST               @"94.240.230.4"
 #define PTBODENET_UDP_BROADCAST               @"192.168.1.255"
-
+//#define PTBODENET_UDP_BROADCAST               @"172.16.236.255"
 //#define PTBODENET_UDP_BROADCAST               @"10.0.1.255"
 //#define PTBODENET_UDP_BROADCAST               @"192.168.1.109"
 
@@ -51,6 +52,7 @@ return _sharedObject; \
 #define PTNODEMSG_ATTRIBUTE_RELEASEDATE       @"ReleaseDate"
 #define PTNODEMSG_ATTRIBUTE_TIME              @"Timestamp"
 #define PTNODEMSG_ATTRIBUTE_DEVICEADDRESS     @"DeviceAddress"
+#define PTNODEMSG_ATTRIBUTE_DEVICEIP          @"DeviceIP"
 
 
 @protocol PTNodeNetConnectorDelegate;
@@ -58,14 +60,13 @@ return _sharedObject; \
 @interface PTNodeNetConnector : NSObject 
 {
      AsyncUdpSocket                  *udpSocket;
-     hos_nodemsg_stack               *nodeStack;
      id <PTNodeNetConnectorDelegate> delegate;
 }
 
 
 @property (nonatomic, retain) AsyncUdpSocket      *udpSocket; 
 @property (nonatomic, strong) id <PTNodeNetConnectorDelegate> delegate;
-@property (nonatomic, assign) hos_nodemsg_stack *nodeStack;
+
 
 + (id)sharedInstance;
 - (BOOL)requestCall:(NSUInteger)toAddress;
@@ -77,6 +78,7 @@ return _sharedObject; \
 - (BOOL)requestUnlockDoor:(NSUInteger)toAddress;
 
 - (BOOL)requestSendMessage:(NSUInteger)toAddress string:(NSString*)string;
+- (BOOL)requestFlash:(NSUInteger)toAddress;
 
 @end
 
@@ -94,6 +96,7 @@ return _sharedObject; \
                                state:(BOOL)state;
 - (void)processDidFinishCommandUnlockDoor:(PTNodeNetConnector *)nodeNetConnector;
 - (void)processDidFinishCommandMessage:(PTNodeNetConnector *)nodeNetConnector;
+- (void)processDidFinishCommandFlash:(PTNodeNetConnector *)nodeNetConnector;
 
 - (void)processDidFinishCommandRestart:(PTNodeNetConnector *)nodeNetConnector;
 

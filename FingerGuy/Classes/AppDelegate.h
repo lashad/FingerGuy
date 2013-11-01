@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (void) showHudMessage:(UIView *)view message:(NSString*)message;
+
 @end
