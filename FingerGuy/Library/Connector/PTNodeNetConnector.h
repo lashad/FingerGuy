@@ -60,7 +60,7 @@ return _sharedObject; \
 @interface PTNodeNetConnector : NSObject 
 {
      AsyncUdpSocket                  *udpSocket;
-     id <PTNodeNetConnectorDelegate> delegate;
+     id <PTNodeNetConnectorDelegate>  delegate;
 }
 
 

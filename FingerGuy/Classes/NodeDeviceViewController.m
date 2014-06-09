@@ -52,6 +52,15 @@
     [dateFormatterForTime setDateStyle:NSDateFormatterMediumStyle];
     [dateFormatterForTime setTimeStyle:NSDateFormatterShortStyle];
     
+    // (Step 2) Use NSDateFormatter to display epochNSDate in local time zone
+    NSDateFormatter *dateFormatter2 = [[NSDateFormatter alloc] init];
+    [dateFormatter2 setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
+    NSLog (@"Epoch time equates to %@", [dateFormatter2 stringFromDate:timeStamp]);
+    
+    // (Just for interest) Display your current time zone
+    NSString *currentTimeZone = [[dateFormatter timeZone] abbreviation];
+    NSLog (@"(Your local time zone is: %@)", currentTimeZone);
+    
     
     firmwareCell.detailTextLabel.text = firmwareVersion;
     firmwarereleaseDateCell.detailTextLabel.text = [dateFormatter stringFromDate:firmwareReleaseDate];

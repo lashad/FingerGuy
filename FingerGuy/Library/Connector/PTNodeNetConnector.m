@@ -266,6 +266,7 @@
 
                 if(hos_nodemsg_get_param_int(packet, 3, &ival, &len)) {
                     NSDate *date = [NSDate dateWithTimeIntervalSince1970:ival];
+                    
                     [attributes setValue:date forKey:PTNODEMSG_ATTRIBUTE_TIME];
                 }
                 
